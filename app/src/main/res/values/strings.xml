@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TimeTable2</string>
+    <string-array name="Main">
+        <item> Timetable </item>
+        <item> Subjects </item>
+        <item> Faculty </item>
+        <item> Resources </item>
+    </string-array>
+
+    <string-array name="Description">
+        <item> Decription 1 </item>
+        <item> Decription 2 </item>
+        <item> Decription 3 </item>
+        <item> Decription 4 </item>
+    </string-array>
+
+    <string-array name="Week">
+        <item> Sunday </item>
+        <item> Monday </item>
+        <item> Tuesday </item>
+        <item> Wednesday </item>
+        <item> Thursday </item>
+        <item> Friday </item>
+        <item> saturday </item>
+
+    </string-array>
+</resources>
