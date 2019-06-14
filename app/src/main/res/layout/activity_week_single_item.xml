@@ -8,25 +8,47 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
-        <com.example.timetable2.utils.LetterImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/ivLetter"
-            android:layout_margin="8dp"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:id="@+id/ivMain2"
+            android:layout_marginLeft="10dp"/>
 
         <TextView
-            android:id="@+id/tvWeek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
+            android:id="@+id/tvMain2"
+            android:text="DAys"
             android:layout_marginTop="6dp"
-            android:layout_toRightOf="@+id/ivLetter"
-            android:text="Days"
+            android:layout_marginStart="6dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/ivMain2"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDescription2"
+            android:text="Description"
+            android:layout_marginStart="6dp"
+            android:layout_below="@+id/tvMain2"
+            android:layout_toEndOf="@+id/ivMain2"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvClick2"
+            android:text="Click here"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_below="@+id/tvDescription2"
+            android:layout_alignBottom="@+id/ivMain2"
+            />
+
 
     </RelativeLayout>
 

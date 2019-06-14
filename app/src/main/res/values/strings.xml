@@ -14,14 +14,63 @@
         <item> Decription 4 </item>
     </string-array>
 
+    <string-array name="Day">
+        <item> Day 1 </item>
+        <item> Day 2 </item>
+        <item> Day 3 </item>
+
+    </string-array>
+
     <string-array name="Week">
         <item> Sunday </item>
         <item> Monday </item>
-        <item> Tuesday </item>
         <item> Wednesday </item>
-        <item> Thursday </item>
-        <item> Friday </item>
-        <item> saturday </item>
+    </string-array>
+    
+    <string-array name="sunday">
+<item>Signal design</item>
+        <item>Analog wave</item>
+        <item>Break</item>
+        <item>Lab</item>
+    </string-array>
+
+    <string-array name="Monday">
+        <item>No design</item>
+        <item>Fm wave</item>
+        <item>Break</item>
+        <item>Lab2</item>
+    </string-array>
+
+    <string-array name="Wednesday">
+        <item>something design</item>
+        <item>Am wave</item>
+        <item>Break</item>
+        <item>Lab3</item>
+    </string-array>
+
+    <string-array name="time1">
+        <item>8:00-9:00</item>
+        <item>9:00-10:00</item>
+        <item>11:00-12:00</item>
+        <item>1:00-2:00</item>
+
+    </string-array>
+
+
+    <string-array name="time2">
+        <item>8:00-9:00</item>
+        <item>9:00-10:00</item>
+        <item>11:00-12:00</item>
+        <item>1:00-2:00</item>
+
+    </string-array>
+
+
+    <string-array name="time3">
+        <item>8:00-9:00</item>
+        <item>9:00-10:00</item>
+        <item>11:00-12:00</item>
+        <item>1:00-2:00</item>
 
     </string-array>
 </resources>

@@ -1,16 +1,19 @@
 package com.example.timetable2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
@@ -39,6 +42,32 @@ public class MainActivity extends AppCompatActivity {
 
         SimpleAdapter simpleAdapter = new SimpleAdapter(this, title, description);
         listView.setAdapter(simpleAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+                switch(i){
+                    case 0: {
+                        Intent intent = new Intent(MainActivity.this, WeekActivity.class);
+                        startActivity(intent);
+                        break;
+                    }
+                    case 1: {
+                        //me//display message when pressed Subjects;
+                        Toast.makeText(MainActivity.this, "no pls",Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 2:{
+                        //me//display message when pressed Faculty;
+                        Toast.makeText(MainActivity.this, "fuck you",Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case 3:{
+                        break;
+                    }
+                    default: break;
+                }
+            }
+        });
     }
 
     public class SimpleAdapter extends BaseAdapter {
