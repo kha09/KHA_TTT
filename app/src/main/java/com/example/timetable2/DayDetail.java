@@ -14,8 +14,9 @@ public class DayDetail extends AppCompatActivity {
     public static String[] Time1;
     public static String[] Time2;
     public static String[] Time3;
+    private String[] PreferredDay;
+    private String[] PreferredTime;
 
-/* test git */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,17 +25,20 @@ public class DayDetail extends AppCompatActivity {
         initTool();
         setupListView();
     }
-    private void setupUIViews(){
+
+    private void setupUIViews() {
         listView = findViewById(R.id.listDayDetail);
         toolbar = findViewById(R.id.ToolbarDayDetail);
     }
-    private void initTool(){
+
+    private void initTool() {
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(WeekActivity.sharedPreferences.getString(WeekActivity.SEL_DAY,null));
+        getSupportActionBar().setTitle(WeekActivity.sharedPreferences.getString(WeekActivity.SEL_DAY, null));
         //Maybe delete this
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-    private void setupListView(){
+
+    private void setupListView() {
         Monday = getResources().getStringArray(R.array.Monday);
         Sunday = getResources().getStringArray(R.array.sunday);
         Wednesday = getResources().getStringArray(R.array.Wednesday);
@@ -43,6 +47,16 @@ public class DayDetail extends AppCompatActivity {
         Time2 = getResources().getStringArray(R.array.time2);
         Time3 = getResources().getStringArray(R.array.time3);
 
-
+        String selected_day = WeekActivity.sharedPreferences.getString(WeekActivity.SEL_DAY, null);
+        if (selected_day.equalsIgnoreCase("Monday")) {
+            PreferredDay = Monday;
+            PreferredTime = Time1;
+        } else if (selected_day.equalsIgnoreCase("Sunday")) {
+            PreferredDay = Sunday;
+            PreferredTime = Time2;
+        } else if (selected_day.equalsIgnoreCase("Wednesday")) {
+            PreferredDay = Wednesday;
+            PreferredTime = Time3;
+        }
     }
 }

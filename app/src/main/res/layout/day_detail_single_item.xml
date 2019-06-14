@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:id="@+id/ivDayDetail"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDayDetails"
+            android:text="Subjects"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="6dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/ivDayDetail"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDescription3"
+            android:text="Description"
+            android:layout_marginStart="6dp"
+            android:layout_below="@+id/tvDayDetails"
+            android:layout_toEndOf="@+id/ivDayDetail"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvClick3"
+            android:text="Click here"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_below="@+id/tvDescription3"
+            android:layout_alignBottom="@+id/ivDayDetail"
+            />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
