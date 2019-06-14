@@ -15,7 +15,7 @@ public class DayDetail extends AppCompatActivity {
     public static String[] Time2;
     public static String[] Time3;
 
-
+/* test git */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
