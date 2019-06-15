@@ -25,7 +25,6 @@ public class WeekActivity extends AppCompatActivity {
     private ListView listView;
     public static SharedPreferences sharedPreferences;
     public static String SEL_DAY;
-//KHA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
