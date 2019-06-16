@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -104,7 +105,7 @@ public class DayDetail extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if(convertView == null){
-                convertView = layoutInflater.inflate(R.layout.main_activity_single_item,null);
+                convertView = layoutInflater.inflate(R.layout.day_detail_single_item,null);
             }
             subject = convertView.findViewById(R.id.tvDayDetails);
             time = convertView.findViewById(R.id.tvTimeDayDetail);
@@ -112,17 +113,35 @@ public class DayDetail extends AppCompatActivity {
 
             subject.setText(subbjectArrray[position]);
             time.setText(timeArray[position]);
-//
-//            if (subbjectArrray[position].equalsIgnoreCase("Signals")){
-//                imageView.setImageResource(R.drawable.timetable);
-//            }else if (titlearray[position].equalsIgnoreCase("Subjects")){
-//                imageView.setImageResource(R.drawable.book);
-//            }else if (titlearray[position].equalsIgnoreCase("Faculty")){
-//                imageView.setImageResource(R.drawable.contact);
-//            }else {
-//                imageView.setImageResource(R.drawable.settings);
-//            }
+
+            if (subbjectArrray[position].equalsIgnoreCase("Signal design")){
+                imageView.setImageResource(R.drawable.timetable);
+            }else if (subbjectArrray[position].equalsIgnoreCase("Analog wave")){
+                imageView.setImageResource(R.drawable.book);
+            }else if (subbjectArrray[position].equalsIgnoreCase("Break")){
+                imageView.setImageResource(R.drawable.calendar);
+            }
+            else if (subbjectArrray[position].equalsIgnoreCase("Lab")){
+                imageView.setImageResource(R.drawable.s);
+            }
+            else if (subbjectArrray[position].equalsIgnoreCase("No design")){
+                imageView.setImageResource(R.drawable.w);
+            }
+            else if (subbjectArrray[position].equalsIgnoreCase("something design")){
+                imageView.setImageResource(R.drawable.timetable);
+            }else {
+                imageView.setImageResource(R.drawable.settings);
+            }
             return convertView;
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home: {
+                onBackPressed();
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
