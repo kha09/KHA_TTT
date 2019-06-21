@@ -81,13 +81,13 @@
     </string-array>
 
     <string-array name="Communiction">
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
-    <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
+        <item>ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</item>
 
     </string-array>
 
@@ -102,7 +102,7 @@
 
     </string-array>
 
-    <string-array name="PWM">
+    <string-array name="AWP">
         <item>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</item>
         <item>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</item>
         <item>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</item>
@@ -110,6 +110,16 @@
         <item>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</item>
         <item>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</item>
         <item>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</item>
+
+    </string-array>
+    <string-array name="titles">
+        <item>Unit 1</item>
+        <item>Unit 2</item>
+        <item>Unit 3</item>
+        <item>Unit 4</item>
+        <item>Unit 5</item>
+        <item>Recommended Books</item>
+        <item>Other Books</item>
 
     </string-array>
 </resources>

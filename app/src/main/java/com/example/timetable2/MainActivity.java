@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                     case 1: {
                         //me//display message when pressed Subjects;
                         Toast.makeText(MainActivity.this, "no pls",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, SubjectActivity.class);
+                        startActivity(intent);
                         break;
                     }
                     case 2:{
