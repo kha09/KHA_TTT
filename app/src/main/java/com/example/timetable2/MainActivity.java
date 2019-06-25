@@ -61,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     case 2:{
                         //me//display message when pressed Faculty;
                         Toast.makeText(MainActivity.this, "fuck you",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(MainActivity.this, FacultyActivity.class);
+                        startActivity(intent);
                         break;
                     }
                     case 3:{
