@@ -122,4 +122,12 @@
         <item>Other Books</item>
 
     </string-array>
+
+    <string-array name="faculty_name">
+        <item>Faculty1</item>
+        <item>Faculty2</item>
+        <item>Faculty3</item>
+        <item>Faculty4</item>
+
+    </string-array>
 </resources>
