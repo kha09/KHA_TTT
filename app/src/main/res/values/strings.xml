@@ -130,4 +130,36 @@
         <item>Faculty4</item>
 
     </string-array>
+
+
+    <string-array name="faculty1">
+        <item>5245345345</item>
+        <item>sdn@gmail.com</item>
+        <item>1st floor</item>
+
+    </string-array>
+
+
+    <string-array name="faculty2">
+        <item>453453453</item>
+        <item>jhj@gmail.com</item>
+        <item>2nd follor</item>
+
+    </string-array>
+
+
+
+    <string-array name="faculty3">
+        <item>4234534534</item>
+        <item>GD@gmail.com</item>
+        <item>3rd floor</item>
+
+    </string-array>
+
+    <string-array name="faculty4">
+        <item>318446534</item>
+        <item>kb@gmail.com</item>
+        <item>4th floor</item>
+
+    </string-array>
 </resources>

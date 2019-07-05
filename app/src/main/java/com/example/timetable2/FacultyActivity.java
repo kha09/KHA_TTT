@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -24,7 +25,8 @@ import com.example.timetable2.utils.LetterImageView;
 public class FacultyActivity extends AppCompatActivity {
     private ListView listview;
     private Toolbar toolbar;
-    private SharedPreferences sharedPreferences;
+    public static SharedPreferences sharedPreferences;
+    public static String SEL_Faculty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class FacultyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_faculty);
         setupUiViews();
         initToolbar();
+        setupListView();
     }
     private void setupUiViews(){
         listview = findViewById(R.id.listFaculty);
@@ -54,21 +57,27 @@ public class FacultyActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 switch(i){
                     case 0: {
-                        startActivity(new Intent(WeekActivity.this, DayDetail.class));
-                        sharedPreferences.edit().putString(SEL_DAY, "Sunday").apply();
+                        startActivity(new Intent(FacultyActivity.this, FacultyDetails.class));
+                        sharedPreferences.edit().putInt(SEL_Faculty, 0).apply();
                         //me//display message when pressed Sunday;
-                        Toast.makeText(WeekActivity.this, "yes pls",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FacultyActivity.this, "Wow",Toast.LENGTH_SHORT).show();
                         break;
                     }
                     case 1: {
-                        startActivity(new Intent(WeekActivity.this, DayDetail.class));
-                        sharedPreferences.edit().putString(SEL_DAY, "Monday").apply();
+                        startActivity(new Intent(FacultyActivity.this, FacultyDetails.class));
+                        sharedPreferences.edit().putInt(SEL_Faculty, 1).apply();
 
                         break;
                     }
                     case 2: {
-                        startActivity(new Intent(WeekActivity.this, DayDetail.class));
-                        sharedPreferences.edit().putString(SEL_DAY, "Wednesday").apply();
+                        startActivity(new Intent(FacultyActivity.this, FacultyDetails.class));
+                        sharedPreferences.edit().putInt(SEL_Faculty, 2).apply();
+
+                        break;
+                    }
+                    case 3: {
+                        startActivity(new Intent(FacultyActivity.this, FacultyDetails.class));
+                        sharedPreferences.edit().putInt(SEL_Faculty, 3).apply();
 
                         break;
                     }
@@ -115,6 +124,16 @@ public class FacultyActivity extends AppCompatActivity {
             private LetterImageView ivLogo;
             private TextView tvFaculty;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home : {
+                onBackPressed();
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
